@@ -1,49 +1,546 @@
+
 <!DOCTYPE html>
-<html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Samruddhi Technologies | Welcome...</title>
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Samruddhitech.github.io : Samruddhi Technologies Open Source Software Center">
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
 
-    <title>Samruddhitech.github.io</title>
-  </head>
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/samruddhitech">View on GitHub</a>
-
-          <h1 id="project_title">Samruddhitech.github.io</h1>
-          <h2 id="project_tagline">Samruddhi Technologies Open Source Software Center</h2>
-
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p><a href="http://samruddhitech.com">Home Page</a></p>
-
-<h1>
-<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting Started</h1>
-
-<p>Welcome to the Samruddhi Technologies Open Source Software Center. </p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
     
 
-  </body>
-</html>
+    <!-- CSS Theme -->    
+    <link rel="stylesheet" href="assets/css/themes/aqua.css" id="style_color">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+
+
+
+
+
+</head> 
+
+<body class="boxed-layout container">
+  
+
+<div class="wrapper">
+    <!--=== Header ===-->    
+    <div class="header">
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="container">
+                <!-- Topbar Navigation -->
+                <ul class="loginbar pull-right">
+                    <!-- <li>
+                        <i class="fa fa-globe"></i>
+                        <a>Languages</a>
+                        <ul class="lenguages">
+                            <li class="active">
+                                <a href="#">English <i class="fa fa-check"></i></a> 
+                            </li>
+                           <!--  <li><a href="#">Spanish</a></li>
+                            <li><a href="#">Russian</a></li>
+                            <li><a href="#">German</a></li> 
+                        </ul>
+                    </li> -->
+                    <li>&nbsp;</li>
+                   <!--  <li class="topbar-devider"></li>  -->
+                  <!--   <li><a href="page_faq.html">Help</a></li>  
+                    <li class="topbar-devider"></li>   
+                    <li><a href="login.html">Login</a></li> -->   
+                </ul>
+                <!-- End Topbar Navigation -->
+            </div>
+        </div>
+        <!-- End Topbar -->
+    
+        <!-- Navbar -->
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img id="logo-header" src="assets/img/samruddhilogo.png" alt="Logo">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Home -->
+                          <li >
+                            <a href="http://samruddhitech.com" >
+                                Home
+                            </a>
+                            <!--  -->
+                        </li>
+                         <li >
+                            <a href="index.html" >
+                                Repositories
+                            </a>
+                            <!--  -->
+                        </li>
+                        <!-- End Home -->
+
+                        <!-- About -->                        
+                       <!--  -->
+                        <!-- End Search Block -->
+                    </ul>
+                </div><!--/navbar-collapse-->
+            </div>    
+        </div>            
+        <!-- End Navbar -->
+    </div>
+    <!--=== End Header ===-->
+
+    <!--=== Breadcrumbs ===-->
+    <div class="breadcrumbs">
+      <div class="container">
+            <h1 class="pull-left">Repositories</h1>
+            <ul class="pull-right breadcrumb">
+                <li><a href="http://samruddhitech.com">Home</a></li>
+                
+                <li class="active">Repositories</li>
+            </ul>
+        </div><!--/container-->
+    </div><!--/breadcrumbs-->
+    <!--=== End Breadcrumbs ===-->
+
+    <!--=== Content Part ===-->
+    <div class="container content">   
+      <div class="row margin-bottom-40">
+          <div class="col-md-6 md-margin-bottom-40">
+                
+
+              <ol id="repos"></ol>
+
+
+               <!--  <ul class="list-unstyled">
+                    <li><i class="fa fa-check color-green"></i> Donec id elit non mi porta gravida</li>
+                    <li><i class="fa fa-check color-green"></i> Corporate and Creative</li>
+                    <li><i class="fa fa-check color-green"></i> Responsive Bootstrap Template</li>
+                    <li><i class="fa fa-check color-green"></i> Elit non mi porta gravida</li>
+                    <li><i class="fa fa-check color-green"></i> Award winning digital agency</li>
+                </ul><br />
+
+                <!-- Blockquotes -->
+                <!-- <blockquote class="hero-unify">
+                    <p>Award winning digital agency. We bring a personal and effective approach to every project we work on, which is why.</p>
+                    <small>CEO Jack Bour</small>
+                </blockquote>  -->
+            </div>
+
+          <div class="col-md-6 md-margin-bottom-40">
+               <!--  <img src="assets/img/about.png" style="height:250px;"> -->
+               <!--  <div class="responsive-video">
+                    <iframe src="http://player.vimeo.com/video/9679622" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
+                </div> -->
+            </div>
+        </div><!--/row-->
+
+      
+
+        <!-- Our Clients -->
+      
+        <!-- //End Our Clients -->
+    </div><!--/container-->   
+    <!--=== End Content Part ===-->
+
+         <!--=== Footer ===-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 md-margin-bottom-40">
+                    <!-- About -->
+                    <div class="headline"><h2>About</h2></div>  
+                    <p class="margin-bottom-25 md-margin-bottom-40">Samruddhi Technologies is a technology services provider delivering IT and IT enabled business solutions...</p>    
+                    <!-- End About -->
+
+                    <!-- Monthly Newsletter -->
+                    <div class="headline"><h2>Monthly Newsletter</h2></div> 
+                    <p>Subscribe to our newsletter and stay up to date with the latest news and deals!</p>
+                    <form class="footer-subsribe">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Email Address">                            
+                            <span class="input-group-btn">
+                                <button class="btn-u" type="button">Subscribe</button>
+                            </span>
+                        </div>                  
+                    </form>                         
+                    <!-- End Monthly Newsletter -->
+                </div><!--/col-md-4-->  
+                
+                <div class="col-md-4 md-margin-bottom-40">
+                    <!-- Recent Blogs -->
+                 <!--    <div class="posts">
+                        <div class="headline"><h2>Recent Blog Entries</h2></div>
+                        <dl class="dl-horizontal">
+                            <dt><a href="#"><img src="assets/img/sliders/elastislide/6.jpg" alt=""></a></dt>
+                            <dd>
+                                <p><a href="#">How to get the statistics of SELECT, INSERT, UPDATE Queries in MYSQL </a></p> 
+                            </dd>
+                        </dl>
+                        <dl class="dl-horizontal">
+                        <dt><a href="#"><img src="assets/img/sliders/elastislide/10.jpg" alt=""></a></dt>
+                            <dd>
+                                <p><a href="#">New High-Performance Provisioned IOPS Storage for Amazon RDS Released</a></p> 
+                            </dd>
+                        </dl>
+                        <dl class="dl-horizontal">
+                        <dt><a href="#"><img src="assets/img/sliders/elastislide/11.jpg" alt=""></a></dt>
+                            <dd>
+                                <p><a href="#">Amazon S3 Now supports Cross-Origin Resource Sharing CORS</a></p> 
+                            </dd>
+                        </dl>
+                    </div> -->
+                    <!-- End Recent Blogs -->                    
+                </div><!--/col-md-4-->
+
+                <div class="col-md-4">
+                    <!-- Contact Us -->
+                    <div class="headline"><h2>Contact Us</h2></div> 
+                    <address class="md-margin-bottom-40">
+                       #588 Dr. Rajkumar Road,<br>
+                        Sri Kesari First Floor,<br>
+                        2nd Block Rajajinagar<br>
+                        Bangalore<br>
+                        Karnataka 560010<br>
+                        India<br>
+                        Email: 
+                            <script type="text/javascript">
+                            //<![CDATA[
+                            <!--
+                            var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
+                            "=58){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
+                            ".substr(0,ol);}f(\")601,\\\"_SYHBa?r`65:v?50 ::54:< -8n\\\\'!*\\\"\\\\$za63" +
+                            "0\\\\,/\\\\\\\\320\\\\SZRAZYKI^[JDPaqtv}v7O,ja771\\\\`s%!]700\\\\610\\\\320" +
+                            "\\\\r\\\\700\\\\230\\\\7M230\\\\710\\\\710\\\\200\\\\400\\\\120\\\\120\\\\_" +
+                            "339v>77$'$.,36/!M|TQ[PSn\\\\AXFAGI000\\\\|#z771\\\\j~4s,,$ddcpkrn\\\\Ur\\\\" +
+                            "130\\\\020\\\\630\\\\400\\\\410\\\\200\\\\710\\\\\\\"(f};o nruter};))++y(^)" +
+                            "i(tAedoCrahc.x(edoCrahCmorf.gnirtS=+o;721=%y;++y)601<i(fi{)++i;l<i;0=i(rof;" +
+                            "htgnel.x=l,\\\"\\\"=o,i rav{)y,x(f noitcnuf\")"                              ;
+                            while(x=eval(x));
+                            //-->
+                            //]]>
+                            </script>
+                    </address>
+                    <!-- End Contact Us -->
+
+                    <!-- Social Links -->
+                    <div class="headline"><h2>Stay Connected</h2></div> 
+                    <ul class="social-icons">
+                        <li><a target="_blank" href="http://samruddhitech.com/blogs/feed/" data-original-title="Feed" class="social_rss"></a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/SamruddhiTechnologiesPvtLtd" data-original-title="Facebook" class="social_facebook"></a></li>
+                        <li><a target="_blank" href="https://twitter.com/samruddhitech" data-original-title="Twitter" class="social_twitter"></a></li>
+                        <li><a href="https://plus.google.com/107879191733359699532/about" data-original-title="Goole Plus" class="social_googleplus"></a></li>
+                        <!-- <li><a href="#" data-original-title="Pinterest" class="social_pintrest"></a></li> -->
+                        <li><a target="_blank" href="https://www.linkedin.com/company/samruddhi-technologies-private-limited" data-original-title="Linkedin" class="social_linkedin"></a></li>
+                        <!-- <li><a href="#" data-original-title="Vimeo" class="social_vimeo"></a></li> -->
+                    </ul>
+                    <!-- End Social Links -->
+                </div><!--/col-md-4-->
+            </div>
+        </div> 
+    </div><!--/footer-->
+    <!--=== End Footer ===-->
+
+    <!--=== Copyright ===-->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">                     
+                    <p>
+                        2014 &copy; Samruddhi Technologies Private Limited. ALL Rights Reserved. 
+                         <a href="http://samruddhitech.com/privacy.html">Privacy Policy</a> | <a href="http://samruddhitech.com/terms.html">Terms of Service</a> | <a href="http://samruddhitech.com/blogs/">Blog</a>
+                    </p>
+                </div>
+               
+            </div>
+        </div> 
+    </div><!--/copyright--> 
+    <!--=== End Copyright ===-->
+</div><!--/wrapper-->
+
+<!-- JS Global Compulsory -->           
+<script type="text/javascript" src="assets/plugins/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+<!-- JS Implementing Plugins -->           
+<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+
+<!-- JS Page Level -->           
+<script type="text/javascript" src="assets/js/app.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        App.init();
+
+    });
+</script>
+
+
+    <script type="text/javascript" src="assets/js/strftime.js"></script>
+    <script type="text/javascript">
+    (function ($, undefined) {
+
+      // Put custom repo URL's in this object, keyed by repo name.
+      var repoUrls = {
+        "bootstrap": "http://samruddhitech.github.com/"
+        // "finagle": "http://twitter.github.com/finagle/",
+        // "hogan.js": "http://twitter.github.com/hogan.js/"
+      };
+
+      function repoUrl(repo) {
+        return repoUrls[repo.name] || repo.html_url;
+      }
+
+      // Put custom repo descriptions in this object, keyed by repo name.
+      var repoDescriptions = {
+        "bootstrap": "An HTML, CSS, and JS toolkit designed to kickstart development of webapps and sites",
+        "naggati2": "A protocol builder for Netty using Scala 2.8"
+      };
+
+      function repoDescription(repo) {
+        return repoDescriptions[repo.name] || repo.description;
+      }
+
+      function addRecentlyUpdatedRepo(repo) {
+        var $item = $("<li>");
+
+        var $name = $("<a>").attr("href", repo.html_url).text(repo.name);
+        $item.append($("<span>").addClass("name").append($name));
+
+        var $time = $("<a>").attr("href", repo.html_url + "/commits").text(strftime("%h %e, %Y", repo.pushed_at));
+        $item.append($("<span>").addClass("time").append($time));
+
+        $item.append('<span class="bullet">&sdot;</span>');
+
+        var $watchers = $("<a>").attr("href", repo.html_url + "/watchers").text(repo.watchers + " stargazers");
+        $item.append($("<span>").addClass("watchers").append($watchers));
+
+        $item.append('<span class="bullet">&sdot;</span>');
+
+        var $forks = $("<a>").attr("href", repo.html_url + "/network").text(repo.forks + " forks");
+        $item.append($("<span>").addClass("forks").append($forks));
+
+        $item.appendTo("#recently-updated-repos");
+      }
+
+      function addRepo(repo) {
+        var $item = $("<li>").addClass("repo grid-1 " + (repo.language || '').toLowerCase());
+        var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
+        $link.append($("<h2>").text(repo.name));
+       // $link.append($("<h3>").text(repo.language));
+        $link.append($("<p>").text(repoDescription(repo)));
+        $item.appendTo("#repos");
+      }
+
+      function addRepos(repos, page) {
+        repos = repos || [];
+        page = page || 1;
+
+        var uri = "https://api.github.com/orgs/Samruddhi-Technologies-Private-Limited/repos?callback=?"
+                + "&per_page=100"
+                + "&page="+page;
+
+        $.getJSON(uri, function (result) {
+          if (result.data && result.data.length > 0) {
+            repos = repos.concat(result.data);
+            addRepos(repos, page + 1);
+          }
+          else {
+            $(function () {
+              $("#num-repos").text(repos.length);
+
+              // Convert pushed_at to Date.
+              $.each(repos, function (i, repo) {
+                repo.pushed_at = new Date(repo.pushed_at);
+
+                var weekHalfLife  = 1.146 * Math.pow(10, -9);
+
+                var pushDelta    = (new Date) - Date.parse(repo.pushed_at);
+                var createdDelta = (new Date) - Date.parse(repo.created_at);
+
+                var weightForPush = 1;
+                var weightForWatchers = 1.314 * Math.pow(10, 7);
+
+                repo.hotness = weightForPush * Math.pow(Math.E, -1 * weekHalfLife * pushDelta);
+                repo.hotness += weightForWatchers * repo.watchers / createdDelta;
+              });
+
+              // Sort by highest # of watchers.
+              repos.sort(function (a, b) {
+                if (a.hotness < b.hotness) return 1;
+                if (b.hotness < a.hotness) return -1;
+                return 0;
+              });
+
+              $.each(repos, function (i, repo) {
+                addRepo(repo);
+              });
+
+              // Sort by most-recently pushed to.
+              repos.sort(function (a, b) {
+                if (a.pushed_at < b.pushed_at) return 1;
+                if (b.pushed_at < a.pushed_at) return -1;
+                return 0;
+              });
+
+              $.each(repos.slice(0, 3), function (i, repo) {
+                addRecentlyUpdatedRepo(repo);
+              });
+            });
+          }
+        });
+      }
+      addRepos();
+
+      //get total number of Twitter members
+      function getNumMembers(page, numMembers) {
+        var page = page || 1;
+        var numMembers = numMembers || 0;
+        var membersUri = "https://api.github.com/orgs/samruddhitech/members?callback=?"
+          + "&per_page=100"
+          + "&page="+page;
+
+        $.getJSON(membersUri, function (result) {
+          if (result.data && result.data.length > 0) {
+            numMembers += result.data.length;
+            getNumMembers(page+1, numMembers);
+          } else {
+            $(function () {
+              $("#num-members").text(numMembers);
+            });
+          }
+        });
+      }
+      getNumMembers();
+
+      function randomItem(array) {
+        return array[Math.floor(Math.random() * array.length)];
+      }
+
+      var $flyzone;
+
+      function flyzone() {
+        if (!$flyzone) {
+          $flyzone = $("<div>").attr("id", "flyzone").prependTo(document.body);
+        }
+
+        return $flyzone;
+      }
+
+      var sizes = ["smaller", "small", "medium", "large", "fat"];
+
+      var sizeDimensions = {
+        "smaller": 50,
+        "small": 80,
+        "medium": 130,
+        "large": 200,
+        "fat": 300
+      };
+
+      function randomOpacity(threshold) {
+        var opacity = Math.random();
+
+        while (opacity < threshold) {
+          opacity = Math.random();
+        }
+
+        return opacity;
+      }
+
+      function makeLarry(sizeName, speed) {
+        var size = sizeDimensions[sizeName];
+        var top = Math.floor((flyzone().height() - size) * Math.random());
+
+        var $img = $("<img>")
+          .addClass("larry size-" + sizeName)
+          .attr("src", "assets/larry.png")
+          .attr("width", size)
+          .attr("height", size)
+          .css({
+            position: "absolute",
+            opacity: randomOpacity(0.4),
+            top: top,
+            left: -size
+          });
+
+        $img.prependTo(flyzone());
+
+        var left = flyzone().width() + size;
+
+        $img.animate({left: left}, speed, function () {
+          $img.remove();
+          makeRandomLarry();
+        });
+
+        return $img;
+      }
+
+      function makeRandomLarry() {
+        var size = randomItem(sizes);
+        var speed = Math.floor(Math.random() * 20000) + 15000;
+        return makeLarry(size, speed);
+      }
+
+      $(function () {
+        $("#logo").click(function () {
+          makeRandomLarry();
+        });
+      });
+
+      var match = (/\blarry(=(\d+))?\b/i).exec(window.location.search);
+
+      if (match) {
+        var n = parseInt(match[2]) || 20;
+
+        $(function () {
+          for (var i = 0; i < n; ++i) {
+            setTimeout(makeRandomLarry, Math.random() * n * 500);
+          }
+        });
+      }
+    })(jQuery);
+    </script>
+
+
+
+
+<!--[if lt IE 9]>
+    <script src="assets/plugins/respond.js"></script>
+    <script src="assets/plugins/html5shiv.js"></script>
+<![endif]-->
+<script type="text/javascript">//<![CDATA[
+// 
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount','UA-33382429-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+//]]></script>
+</body>
+</html> 
